@@ -719,8 +719,22 @@ a.brand:focus{
 .navigation ul .active a,
 .navigation ul li a:hover{
   color: #818c0a;
-  border-bottom:2px solid #818c0a;
+  animation: border-li .5s ease-in-out both;
   text-decoration: none;
+}
+@keyframes border-li{
+  25%{
+    border-left:2px solid #818c0a;
+  }
+  50%{
+    border-top:2px solid #818c0a;
+  }
+  75%{
+    border-right:2px solid #818c0a;
+  }
+  100%{
+    border-bottom:2px solid #818c0a;
+  }
 }
 
 /* 2.2 Navbar affix */
