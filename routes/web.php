@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index-dark');
-});
+Route::get('/', "HomeController@index");
